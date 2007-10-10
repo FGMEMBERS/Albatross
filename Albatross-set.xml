@@ -72,6 +72,26 @@ April 2006     faber@sol2500.net
    </config>
   </view>
 
+  <view n="100">
+   <name>interior view</name>
+   <type>lookfrom</type>
+   <internal archive="y">true</internal>
+    <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <ground-level-nearplane-m type="double">0.05f</ground-level-nearplane-m>
+        <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+        <default-pitch-deg type="double">0</default-pitch-deg>
+        <default-heading-deg type="double">0</default-heading-deg>
+        <front-direction-deg type="double">0</front-direction-deg>
+     <x-offset-m archive="y" type="double">0.0</x-offset-m>
+     <y-offset-m archive="y" type="double">0.5</y-offset-m>
+     <z-offset-m archive="y" type="double">4.5</z-offset-m>
+     <pitch-offset-deg>3</pitch-offset-deg>
+    </config>
+  </view>
+
+
   <chase-distance-m type="double" archive="y">-45.0</chase-distance-m>
 
   <help>
@@ -115,11 +135,23 @@ April 2006     faber@sol2500.net
      <zero-pitch-trim-full-throttle type="float">0.001</zero-pitch-trim-full-throttle>
    </config>
  </autopilot>
-
+	<input>
+		<keyboard>
+      <key n="119"> 
+        <name>w</name>
+        <desc>walk forward</desc>
+        <binding n="0"> 
+          <command>nasal</command>
+          <script>albatross.int_mov()</script>
+        </binding>
+      </key>
+     </keyboard>
+	</input>
  <nasal>
-   <albatros>
+   <albatross>
      <file>Aircraft/Albatross/Albatross.nas</file>
-   </albatros>
+     <script>init();</script>
+   </albatross>
  </nasal>
 
 
