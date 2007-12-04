@@ -1,12 +1,12 @@
 var cview = nil;
-aphmode = nil;
-avhmode = nil;
-htempmode = nil;
-vtemphome = nil;
-head = nil;
-posx = nil;
-posy = nil;
-posz = nil;
+var aphmode = nil;
+var avhmode = nil;
+var htempmode = nil;
+var vtemphome = nil;
+var head = nil;
+var posx = nil;
+var posy = nil;
+var posz = nil;
 var currentZone = 1;
 var leftZone = 7;
 var rightZone = 9;
@@ -132,10 +132,10 @@ var int_mov = func {
 									currentZone=rightZone;
 									leftZone = zoneData[currentZone][6];
 									rightZone = zoneData[currentZone][7];
-									print ("right");
-									print (currentZone);
-									print (leftZone);
-									print (rightZone);
+#									print ("right");
+#									print (currentZone);
+#									print (leftZone);
+#									print (rightZone);
 								} else {
 								setprop ("sim/current-view/x-offset-m", posx -0.02);
 								}
@@ -163,9 +163,9 @@ var int_mov = func {
 
 								leftZone = zoneData[currentZone][6];
 								rightZone = zoneData[currentZone][7];
-								print (currentZone);
-								print (leftZone);
-								print (rightZone);
+#								print (currentZone);
+#								print (leftZone);
+#								print (rightZone);
 							} else {
 								setprop ("sim/current-view/z-offset-m", posz -0.02);
 								}
