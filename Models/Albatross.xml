@@ -747,6 +747,183 @@
   </axis>
  </animation>
 
+<!-- internal doors -->
+<animation> 
+   <type>rotate</type>
+   <object-name>bowhatch</object-name>
+   <property>controls/doors/door0/position-norm</property>
+   <factor>90</factor>
+   <center> 
+   <x-m>1.33</x-m>
+   <y-m>0.331</y-m>
+   <z-m>-0.079</z-m>
+   </center>
+   <axis> 
+    <x1-m>1.042</x1-m>
+   <y1-m>0.313</y1-m>
+   <z1-m>-0.187</z1-m>
+   <x2-m>1.619</x2-m>
+   <y2-m>0.35</y2-m>
+   <z2-m>0.029</z2-m>
+   </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>bowhatch</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>albatross.toggle_nosedoor()</script>
+    </binding>
+  </action>
+</animation>
+<animation> 
+   <type>rotate</type>
+   <object-name>bowdoor</object-name>
+   <property>controls/doors/door1/position-norm</property>
+   <factor>-180</factor>
+   <center> 
+   <x-m>2.391</x-m>
+   <y-m>0.219</y-m>
+   <z-m>0.0</z-m>
+   </center>
+   <axis> 
+     <x>0.0</x>
+     <y>0</y>
+     <z>1.0</z>
+   </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>bowdoor</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>albatross.toggle_bowdoor()</script>
+    </binding>
+  </action>
+</animation>
+
+<animation> 
+   <type>rotate</type>
+   <object-name>cockpitdoor</object-name>
+   <property>controls/doors/door2/position-norm</property>
+   <factor>180</factor>
+   <center> 
+   <x-m>4.85</x-m>
+   <y-m>0.285</y-m>
+   <z-m>0.0</z-m>
+   </center>
+   <axis> 
+     <x>0.0</x>
+     <y>0</y>
+     <z>1.0</z>
+   </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>cockpitdoor</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>albatross.toggle_cockpitdoor()</script>
+    </binding>
+  </action>
+</animation>
+<animation> 
+   <type>rotate</type>
+   <object-name>freightdoor</object-name>
+   <property>controls/doors/door6/position-norm</property>
+   <factor>-90</factor>
+   <center> 
+   <x-m>9.687</x-m>
+   <y-m>0.757</y-m>
+   <z-m>1.211</z-m>
+   </center>
+   <axis> 
+    <x1-m>8.898</x1-m>
+   <y1-m>0.765</y1-m>
+   <z1-m>1.267</z1-m>
+   <x2-m>10.475</x2-m>
+   <y2-m>0.75</y2-m>
+   <z2-m>1.155</z2-m>
+   </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>freightdoor</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>albatross.toggle_freightdoor()</script>
+    </binding>
+  </action>
+</animation>
+<animation> 
+   <type>rotate</type>
+   <object-name>upperdoor</object-name>
+   <property>controls/doors/door4/position-norm</property>
+   <factor>-90</factor>
+   <center> 
+   <x-m>12.388</x-m>
+   <y-m>-0.821</y-m>
+   <z-m>0.0</z-m>
+   </center>
+   <axis> 
+     <x>0.0</x>
+     <y>0</y>
+     <z>1.0</z>
+   </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>upperdoor</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>albatross.toggle_upperdoor()</script>
+    </binding>
+  </action>
+</animation>
+<animation> 
+   <type>rotate</type>
+   <object-name>lowerdoor</object-name>
+   <property>controls/doors/door5/position-norm</property>
+   <factor>-90</factor>
+   <center> 
+   <x-m>12.388</x-m>
+   <y-m>-0.821</y-m>
+   <z-m>0.0</z-m>
+   </center>
+   <axis> 
+     <x>0.0</x>
+     <y>0</y>
+     <z>1.0</z>
+   </axis>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>lowerdoor</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>albatross.toggle_lowerdoor()</script>
+    </binding>
+  </action>
+</animation>
+
 <!-- external models -->
     <model> 
       <path>Aircraft/Albatross/Models/transparent.ac</path>
