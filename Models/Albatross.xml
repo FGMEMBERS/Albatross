@@ -105,6 +105,7 @@
 <!--propeller -->
   <model>
     <name>pdiskL</name>
+		<nopreview/>
     <path>Aircraft/Albatross/Models/pdiskL.xml</path>
     <offsets>
    <x-m>3.15</x-m>
@@ -163,6 +164,7 @@
 
   <model>
     <name>pdiskR</name>
+		<nopreview/>
     <path>Aircraft/Albatross/Models/pdiskR.xml</path>
     <offsets>
    <x-m>3.15</x-m>
