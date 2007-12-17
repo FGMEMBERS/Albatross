@@ -13,7 +13,7 @@ April 2006     faber@sol2500.net
 
   <description>Grumman Albatross</description>
   <author>Detlef Faber</author>
-
+  <status>beta</status>
   <flight-model>yasim</flight-model>
   <aero>Albatross-yasim</aero>
   <fuel-fraction>1.0</fuel-fraction>
