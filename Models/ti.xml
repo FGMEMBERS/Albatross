@@ -37,7 +37,7 @@
   <property>orientation/side-slip-deg</property>
   <min-m>-0.02</min-m>
   <max-m>0.02</max-m>
-  <factor>0.002</factor> 
+  <factor>-0.002</factor> <!-- inverted after a change in side-slip sign (bug #901) -->
   <axis>
    <x>0</x>
    <y>1</y>
