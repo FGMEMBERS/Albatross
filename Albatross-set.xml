@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+Grumman Hu-16 Albatros Seaplane by Detlef Faber
+
+
+April 2006     faber@sol2500.net
+************************************************************************
+-->
+
+<PropertyList>
+ <sim>
+
+  <description>Grumman Albatross</description>
+  <author>Detlef Faber</author>
+  <status>beta</status>
+  <flight-model>yasim</flight-model>
+  <aero>Albatross-yasim</aero>
+  <fuel-fraction>1.0</fuel-fraction>
+
+  <sound>
+   <path>Aircraft/Albatross/dc3-sound.xml</path>
+  </sound>
+
+  <panel>
+   <path>Aircraft/c310/c310-vfr-panel.xml</path>
+   <visibility>false</visibility>
+  </panel>
+  <panel_2>
+   <path>Aircraft/c310/c310-mini-panel.xml</path>
+  </panel_2>
+
+  <model>
+   <path>Aircraft/Albatross/Models/Albatross.xml</path>
+  </model> 
+
+  <virtual-cockpit archive="y">false</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+     <!-- x/y/z == right/up/back -->
+     <x-offset-m archive="y">-0.40</x-offset-m>
+     <y-offset-m archive="y">0.45</y-offset-m>
+     <z-offset-m archive="y">3.30</z-offset-m>
+     <pitch-offset-deg>-12</pitch-offset-deg>
+   </config>
+  </view>
+
+<view n="1">
+   <config>
+    <target-z-offset-m archive="y" type="double">7.349</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="2">
+   <config>
+    <target-z-offset-m archive="y" type="double">7.349</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="3">
+   <config>
+    <target-z-offset-m archive="y" type="double">7.349</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="4">
+   <config>
+    <target-z-offset-m archive="y" type="double">7.349</target-z-offset-m>
+   </config>
+  </view>
+  <view n="5">
+   <config>
+    <target-z-offset-m archive="y" type="double">7.349</target-z-offset-m>
+   </config>
+  </view>
+  <view n="6">
+   <config>
+    <target-z-offset-m archive="y" type="double">7.349</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="100">
+   <name>interior view</name>
+   <type>lookfrom</type>
+   <internal archive="y">true</internal>
+    <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <ground-level-nearplane-m type="double">0.05f</ground-level-nearplane-m>
+        <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+        <default-pitch-deg type="double">0</default-pitch-deg>
+        <default-heading-deg type="double">0</default-heading-deg>
+        <front-direction-deg type="double">0</front-direction-deg>
+     <x-offset-m archive="y" type="double">0.0</x-offset-m>
+     <y-offset-m archive="y" type="double">0.4</y-offset-m>
+     <z-offset-m archive="y" type="double">4.3</z-offset-m>
+     <pitch-offset-deg>3</pitch-offset-deg>
+    </config>
+  </view>
+
+
+  <chase-distance-m type="double" archive="y">-45.0</chase-distance-m>
+
+  <help>
+   <title>Grumman Albatross</title>
+	<text>Famous SAR and Sea Patrol Seaplane.
+You can use the internal view to open doors and walk around the cabin. Enter Mouse View mode (the one you can look around) and press the w key to move forward. 
+	</text>
+  </help>
+ </sim>
+
+ <controls>
+	<doors>
+		<door4>	
+			<position-norm type="float">0.0</position-norm>
+		</door4>
+		<door5>	
+			<position-norm type="float">0.0</position-norm>
+		</door5>
+	</doors>
+  <engines>
+   <engine n="0">
+    <magnetos>3</magnetos>
+   </engine>
+   <engine n="1">
+    <magnetos>3</magnetos>
+   </engine>
+  </engines>
+  <gear>
+    <brake-parking>1</brake-parking>
+    <tailwheel-lock type="bool">false</tailwheel-lock>
+  </gear>
+ </controls>
+
+ <engines>
+  <engine>
+   <rpm type="double">700</rpm>
+  </engine>
+  <engine>
+   <rpm type="double">700</rpm>
+  </engine>
+ </engines>
+  
+ <autopilot>
+   <config>
+     <min-climb-speed-kt type="float">100.0</min-climb-speed-kt>
+     <best-climb-speed-kt type="float">120.0</best-climb-speed-kt>
+     <target-climb-rate-fpm type="float">1000.0</target-climb-rate-fpm>
+     <target-descent-rate-fpm type="float">1000.0</target-descent-rate-fpm>
+     <elevator-adj-factor type="float">6000.0</elevator-adj-factor>
+     <integral-contribution type="float">0.005</integral-contribution>
+     <zero-pitch-throttle type="float">0.45</zero-pitch-throttle>
+     <zero-pitch-trim-full-throttle type="float">0.001</zero-pitch-trim-full-throttle>
+   </config>
+ </autopilot>
+	<input>
+		<keyboard>
+      <key n="119"> 
+        <name>w</name>
+        <desc>walk forward</desc>
+        <binding n="0"> 
+          <command>nasal</command>
+          <script>albatross.int_mov()</script>
+        </binding>
+      </key>
+     </keyboard>
+	</input>
+ <nasal>
+   <albatross>
+     <file>Aircraft/Albatross/Albatross.nas</file>
+     <script>init();</script>
+   </albatross>
+ </nasal>
+
+
+</PropertyList>
