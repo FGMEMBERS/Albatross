@@ -19,15 +19,15 @@ April 2006     faber@sol2500.net
   <fuel-fraction>1.0</fuel-fraction>
 
   <sound>
-   <path>Aircraft/Albatross/dc3-sound.xml</path>
+   <path>Aircraft/Albatross/Albatross-sound.xml</path>
   </sound>
 
   <panel>
-   <path>Aircraft/c310/c310-vfr-panel.xml</path>
+   <path>Aircraft/Albatross/Models/Panels/Albatross-vfr-panel.xml</path>
    <visibility>false</visibility>
   </panel>
   <panel_2>
-   <path>Aircraft/c310/c310-mini-panel.xml</path>
+   <path>Aircraft/Albatross/Models/Panels/Albatross-mini-panel.xml</path>
   </panel_2>
 
   <model>
