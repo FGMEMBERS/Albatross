@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+
+<!-- pilots panel -->
+  <model>
+    <name>airspeed</name>
+    <path>Aircraft/Albatross/Models/airspeed.xml</path>
+    <offsets>
+   <x-m>2.6835</x-m>
+   <y-m>-0.4735</y-m>
+   <z-m>0.121</z-m>
+    </offsets>
+  </model>	
+
+  <model>
+    <name>altimeter</name>
+    <path>Aircraft/Albatross/Models/jrb-wbd-alt.xml</path>
+    <offsets>
+   <x-m>2.683</x-m>
+   <y-m>-0.4735</y-m>
+   <z-m>0.039</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>compass</name>
+    <path>Aircraft/Albatross/Models/p51d-jw-remote.xml</path>
+    <offsets>
+   <x-m>2.685</x-m>
+   <y-m>-0.3875</y-m>
+   <z-m>0.12</z-m>
+    </offsets>
+  </model>	
+
+  <model>
+    <name>horizon</name>
+    <path>Aircraft/Albatross/Models/jrb-wbd-horizon.xml</path>
+    <offsets>
+   <x-m>2.696</x-m>
+   <y-m>-0.303</y-m>
+   <z-m>0.122</z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>turn</name>
+    <path>Aircraft/Albatross/Models/jrb-wbd-turn.xml</path>
+    <offsets>
+   <x-m>2.684</x-m>
+   <y-m>-0.3054</y-m>
+   <z-m>0.038</z-m>
+    </offsets>
+  </model>
+
+
+<!-- mid panel -->
+  <model>
+    <name>clock</name>
+    <path>Aircraft/Albatross/Models/jrb-wbd-clock.xml</path>
+    <offsets>
+   <x-m>2.685</x-m>
+   <y-m>-0.192</y-m>
+   <z-m>0.19</z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>manifold pressure</name>
+    <path>Aircraft/Albatross/Models/jrb-wbd-mp-left.xml</path>
+    <offsets>
+   <x-m>2.685</x-m>
+   <y-m>-0.038</y-m>
+   <z-m>0.19</z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>rpm</name>
+    <path>Aircraft/Albatross/Models/jrb-wbd-rpm-left.xml</path>
+    <offsets>
+   <x-m>2.685</x-m>
+   <y-m>0.041</y-m>
+   <z-m>0.19</z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>vsi-l</name>
+    <path>Aircraft/Albatross/Models/jrb-wbd-vsi.xml</path>
+    <offsets>
+   <x-m>2.685</x-m>
+   <y-m>-0.192</y-m>
+   <z-m>0.111</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>vsi-l</name>
+    <path>Aircraft/Albatross/Models/altimeter.xml</path>
+    <offsets>
+   <x-m>2.689</x-m>
+   <y-m>-0.192</y-m>
+   <z-m>0.03</z-m>
+    </offsets>
+  </model>
+    <model> 
+      <path>Aircraft/Albatross/Models/dc3-pilot-seat.xml</path>
+	  <name>pilot-seat</name>
+      <offsets> 
+        <x-m>3.2</x-m>
+        <y-m>-0.5</y-m>
+        <z-m>-0.25</z-m>
+      </offsets>
+    </model>
+    <model> 
+      <path>Aircraft/Albatross/Models/dc3-pilot-seat.xml</path>
+	  <name>copilot-seat</name>
+      <offsets> 
+        <x-m>3.2</x-m>
+        <y-m>0.5</y-m>
+        <z-m>-0.25</z-m>
+      </offsets>
+    </model>
+    <model> 
+      <path>Aircraft/Albatross/Models/dc3-pilot-seat.xml</path>
+	  <name>radio-operator-seat</name>
+      <offsets> 
+        <x-m>4.0</x-m>
+        <y-m>0.6</y-m>
+        <z-m>-0.25</z-m>
+       <heading-deg>180</heading-deg>
+      </offsets>
+    </model>
+</PropertyList>

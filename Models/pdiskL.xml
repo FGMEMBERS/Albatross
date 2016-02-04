@@ -8,6 +8,13 @@
 
     <path>pdisk.ac</path>
 
+
+      	<effect>
+		<inherits-from>Effects/model-transparent</inherits-from>
+  <object-name>noshadow.spdisk</object-name>
+	  <object-name>noshadow.fpdisk</object-name>
+	</effect>
+
  <animation>
   <type>select</type>
   <object-name>noshadow.spdisk</object-name>

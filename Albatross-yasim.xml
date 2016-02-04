@@ -7,6 +7,10 @@
   <control-setting axis="/controls/engines/engine[1]/mixture" value="1.0"/>
   <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.5"/>
   <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.5"/>
+  <control-setting axis="/controls/engines/engine[0]/boost" value="0.0"/>
+<!--
+  <control-setting axis="/controls/engines/engine[1]/boost" value="0.0"/>
+-->
 <!--
   <control-setting axis="/controls/engines/engine[0]/reverser" value="0.0"/>
   <control-setting axis="/controls/engines/engine[1]/reverser" value="0.0"/>
@@ -22,7 +26,9 @@
   <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
   <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1.0"/>
   <control-setting axis="/controls/engines/engine[0]/boost" value="1.0"/>
+<!--
   <control-setting axis="/controls/engines/engine[1]/boost" value="1.0"/>
+-->
 <!--
   <control-setting axis="/controls/engines/engine[0]/reverser" value="0.0"/>
   <control-setting axis="/controls/engines/engine[1]/reverser" value="0.0"/>
@@ -85,12 +91,12 @@
            cruise-alt="1500" cruise-power="1200"
            cruise-speed="140" cruise-rpm="1056"
            gear-ratio="0.44"
-           min-rpm="766" max-rpm="1237" >
+           min-rpm="500" max-rpm="1237" >
   <actionpt x="-4.688" y="2.993" z="1.342"/>
   <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE" />
   <piston-engine
     eng-power="1425" eng-rpm="2900"
-    turbo-mul="5.5" wastegate-mp="61"
+    turbo-mul="2.5" wastegate-mp="61"
     >
     <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
     <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
@@ -111,18 +117,18 @@
            cruise-alt="1500" cruise-power="1200"
            cruise-speed="140" cruise-rpm="1056"
            gear-ratio="0.44"
-           min-rpm="766" max-rpm="1237" >
+           min-rpm="500" max-rpm="1237" >
   <actionpt x="-4.688" y="-2.993" z="1.342"/>
   <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE" />
   <piston-engine
     eng-power="1425" eng-rpm="2900"
-    turbo-mul="5.5" wastegate-mp="61"
+    turbo-mul="2.5" wastegate-mp="61"
     >
     <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
     <control-input axis="/controls/engines/engine[1]/starter" control="STARTER"/>
     <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
     <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
-    <control-input axis="/controls/engines/engine[1]/boost" control="BOOST"/>
+    <control-input axis="/controls/engines/engine[0]/boost" control="BOOST"/>
 <!--
     <control-input axis="/controls/engines/engine[1]/reverser" control="REVERSE_THRUST"/>
 -->
@@ -178,14 +184,14 @@
 <!-- Main fuselage -->
 
 <gear x="-2.0" y="0" z="-2.0 " compression="1.2"  
-    spring="15" damp="8" sfric = "0.4" dfric = "0.3" ignored-by-solver="1"
+    spring="6.5" damp="8" sfric = "0.4" dfric = "0.3" ignored-by-solver="1"
 	  on-water="1" on-solid="0" reduce-friction-by-extension="1.0"
 	  speed-planing="25" spring-factor-not-planing="0.2">
 
 </gear>
 
 <gear x="-7.80" y="0" z="-2.2" compression="2.4" ignored-by-solver="1"
-    spring="6" damp="8" sfric = "0.4" dfric = "0.1" 
+    spring="5.6" damp="8" sfric = "0.5" dfric = "0.2" 
 	  on-water="1" on-solid="0" reduce-friction-by-extension="1.1"
 	  speed-planing="35" spring-factor-not-planing="0.3">
 </gear>

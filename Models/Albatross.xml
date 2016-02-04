@@ -3,104 +3,22 @@
 <PropertyList>
 
  <path>albatros.ac</path>
-<!-- pilots panel -->
+
+ <nasal> <load> var livery_update = aircraft.livery_update.new( "Aircraft/Albatross/Models/Liveries", 10, func { print("albatross livery update") }); </load> <unload> livery_update.stop(); </unload> </nasal> <animation> <type>material</type> <object-name>fuselage</object-name> <object-name>wing.R</object-name> <object-name>leftwing</object-name> <object-name>rudder</object-name> <object-name>elevator.L</object-name> <object-name>elevator.R</object-name> <object-name>lefthstab</object-name> <object-name>lefthstab.001</object-name> <object-name>leftfloat</object-name> <object-name>leftfloat.001</object-name> <object-name>flap.L</object-name> <object-name>flap.R</object-name> <object-name>aileron.L</object-name> <object-name>aileron.R</object-name> <object-name>vstab</object-name> <object-name>bowhatch</object-name> <object-name>leftengine</object-name> <object-name>leftengine.001</object-name> <object-name>lowerdoor</object-name> <object-name>upperdoor</object-name> <object-name>lwgeardoor.L</object-name> <object-name>lwgeardoor.R</object-name> <object-name>uwgeardoor.L</object-name> <object-name>uwgeardoor.R</object-name><object-name>wheel1.L</object-name> <object-name>wheel1.R</object-name> <object-name>cpthatch.L</object-name> <object-name>cpthatch.R</object-name> <object-name>ngdoor.R</object-name> <object-name>ngdoor.L</object-name> <object-name>nosewheel1</object-name> <object-name>mwgeardoor.R</object-name> <object-name>mwgeardoor.L</object-name> <property-base>sim/model/livery</property-base> <texture-prop>texture</texture-prop> <texture>albatross-1.png</texture> </animation>      	<effect>
+		<inherits-from>Effects/model-transparent</inherits-from>
+  <object-name>glass</object-name>
+	</effect>
+	<animation>
+		<type>shader</type>
+		<shader>chrome</shader>
+		<texture>Aircraft/Albatross/Models/glass_shader.png</texture>
+		<object-name>glass</object-name>
+	</animation>
+
   <model>
-    <name>airspeed</name>
-    <path>Aircraft/Albatross/Models/airspeed.xml</path>
-    <offsets>
-   <x-m>2.6835</x-m>
-   <y-m>-0.4735</y-m>
-   <z-m>0.121</z-m>
-    </offsets>
+    <name>cockpit</name>
+    <path>Aircraft/Albatross/Models/cockpit.xml</path>
   </model>	
-
-  <model>
-    <name>altimeter</name>
-    <path>Aircraft/Albatross/Models/jrb-wbd-alt.xml</path>
-    <offsets>
-   <x-m>2.683</x-m>
-   <y-m>-0.4735</y-m>
-   <z-m>0.039</z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <name>compass</name>
-    <path>Aircraft/Albatross/Models/p51d-jw-remote.xml</path>
-    <offsets>
-   <x-m>2.685</x-m>
-   <y-m>-0.3875</y-m>
-   <z-m>0.12</z-m>
-    </offsets>
-  </model>	
-
-  <model>
-    <name>horizon</name>
-    <path>Aircraft/Albatross/Models/jrb-wbd-horizon.xml</path>
-    <offsets>
-   <x-m>2.696</x-m>
-   <y-m>-0.303</y-m>
-   <z-m>0.122</z-m>
-    </offsets>
-  </model>
-  <model>
-    <name>turn</name>
-    <path>Aircraft/Albatross/Models/jrb-wbd-turn.xml</path>
-    <offsets>
-   <x-m>2.684</x-m>
-   <y-m>-0.3054</y-m>
-   <z-m>0.038</z-m>
-    </offsets>
-  </model>
-
-
-<!-- mid panel -->
-  <model>
-    <name>clock</name>
-    <path>Aircraft/Albatross/Models/jrb-wbd-clock.xml</path>
-    <offsets>
-   <x-m>2.685</x-m>
-   <y-m>-0.192</y-m>
-   <z-m>0.19</z-m>
-    </offsets>
-  </model>
-  <model>
-    <name>manifold pressure</name>
-    <path>Aircraft/Albatross/Models/jrb-wbd-mp-left.xml</path>
-    <offsets>
-   <x-m>2.685</x-m>
-   <y-m>-0.038</y-m>
-   <z-m>0.19</z-m>
-    </offsets>
-  </model>
-  <model>
-    <name>rpm</name>
-    <path>Aircraft/Albatross/Models/jrb-wbd-rpm-left.xml</path>
-    <offsets>
-   <x-m>2.685</x-m>
-   <y-m>0.041</y-m>
-   <z-m>0.19</z-m>
-    </offsets>
-  </model>
-  <model>
-    <name>vsi-l</name>
-    <path>Aircraft/Albatross/Models/jrb-wbd-vsi.xml</path>
-    <offsets>
-   <x-m>2.685</x-m>
-   <y-m>-0.192</y-m>
-   <z-m>0.111</z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <name>vsi-l</name>
-    <path>Aircraft/Albatross/Models/altimeter.xml</path>
-    <offsets>
-   <x-m>2.689</x-m>
-   <y-m>-0.192</y-m>
-   <z-m>0.03</z-m>
-    </offsets>
-  </model>
 
 <!--propeller -->
   <model>
@@ -226,6 +144,7 @@
  <animation>
   <type>rotate</type>
   <object-name>nosewheel</object-name>
+   <object-name>nosewheel1</object-name>
   <object-name>nosegear</object-name>
   <property>gear/gear[0]/position-norm</property>
   <interpolation>
@@ -256,6 +175,7 @@
 <animation> 
    <type>rotate</type>
    <object-name>nosewheel</object-name>
+   <object-name>nosewheel1</object-name>
    <object-name>nosegear</object-name>
    <property>gear/gear[0]/caster-angle-deg</property>
    <factor>1</factor>
@@ -339,7 +259,8 @@
 <!-- left gear -->
  <animation>
   <type>rotate</type>
-  <object-name>stopwheel.L</object-name>
+  <object-name>wheel.L</object-name>
+  <object-name>wheel1.L</object-name>
   <object-name>gearp1.L</object-name>
   <object-name>mwgeardoor.L</object-name>
   <property>gear/gear[1]/position-norm</property>
@@ -393,7 +314,8 @@
  </animation>
  <animation>
   <type>rotate</type>
-  <object-name>stopwheel.L</object-name>
+  <object-name>wheel.L</object-name>
+  <object-name>wheel1.L</object-name>
   <object-name>mwgeardoor.L</object-name>
   <property>gear/gear[1]/position-norm</property>
   <interpolation>
@@ -476,7 +398,8 @@
 <!-- right gear -->
  <animation>
   <type>rotate</type>
-  <object-name>stopwheel.R</object-name>
+  <object-name>wheel.R</object-name>
+  <object-name>wheel1.R</object-name>
   <object-name>gearp1.R</object-name>
   <object-name>mwgeardoor.R</object-name>
   <property>gear/gear[2]/position-norm</property>
@@ -532,7 +455,8 @@
  </animation>
  <animation>
   <type>rotate</type>
-  <object-name>stopwheel.R</object-name>
+  <object-name>wheel.R</object-name>
+  <object-name>wheel1.R</object-name>
   <object-name>mwgeardoor.R</object-name>
   <property>gear/gear[2]/position-norm</property>
   <interpolation>
@@ -927,42 +851,50 @@
 </animation>
 
 <!-- external models -->
-    <model> 
-      <path>Aircraft/Albatross/Models/transparent.ac</path>
-	  <name>glass</name>
-      <offsets> 
-        <x-m>0.0</x-m>
-        <y-m>0.0</y-m>
-        <z-m>0.0</z-m>
-      </offsets>
-    </model>
-    <model> 
-      <path>Aircraft/Albatross/Models/dc3-pilot-seat.xml</path>
-	  <name>pilot-seat</name>
-      <offsets> 
-        <x-m>3.2</x-m>
-        <y-m>-0.5</y-m>
-        <z-m>-0.25</z-m>
-      </offsets>
-    </model>
-    <model> 
-      <path>Aircraft/Albatross/Models/dc3-pilot-seat.xml</path>
-	  <name>copilot-seat</name>
-      <offsets> 
-        <x-m>3.2</x-m>
-        <y-m>0.5</y-m>
-        <z-m>-0.25</z-m>
-      </offsets>
-    </model>
-    <model> 
-      <path>Aircraft/Albatross/Models/dc3-pilot-seat.xml</path>
-	  <name>radio-operator-seat</name>
-      <offsets> 
-        <x-m>4.0</x-m>
-        <y-m>0.6</y-m>
-        <z-m>-0.25</z-m>
-       <heading-deg>180</heading-deg>
-      </offsets>
-    </model>
 
+ <model>
+  <path>Aircraft/Albatross/Models/Effects/sprayF.xml</path>
+	<name>Fuselage-Spray-front</name>
+  <offsets>
+   <x-m>0.6</x-m>
+   <y-m>0</y-m>
+   <z-m>-1.6</z-m>
+  </offsets>
+ </model>
+<model>
+  <path>Aircraft/Albatross/Models/Effects/sprayM.xml</path>
+	<name>Fuselage-Spray-mid</name>
+  <offsets>
+   <x-m>7.0</x-m>
+   <y-m>0</y-m>
+   <z-m>-1.5</z-m>
+  </offsets>
+ </model>
+<model>
+  <path>Aircraft/Albatross/Models/Effects/sprayR.xml</path>
+	<name>Fuselage-Spray-rear</name>
+  <offsets>
+   <x-m>14.0</x-m>
+   <y-m>0</y-m>
+   <z-m>-1.5</z-m>
+  </offsets>
+ </model>
+<model>
+  <path>Aircraft/Albatross/Models/Effects/sprayFL.xml</path>
+	<name>Float-left-Spray</name>
+  <offsets>
+   <x-m>7.5</x-m>
+   <y-m>-10.3</y-m>
+   <z-m>-1.1</z-m>
+  </offsets>
+ </model>
+<model>
+  <path>Aircraft/Albatross/Models/Effects/sprayFR.xml</path>
+	<name>Float-right-Spray</name>
+  <offsets>
+   <x-m>7.5</x-m>
+   <y-m>10.3</y-m>
+   <z-m>-1.1</z-m>
+  </offsets>
+ </model>
 </PropertyList>

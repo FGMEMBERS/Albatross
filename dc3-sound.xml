@@ -41,7 +41,7 @@
   <engine>
    <name>engine1_idle</name>
    <mode>looped</mode>
-   <path>Aircraft/Albatross/Sounds/engine_idle.wav</path>
+   <path>Aircraft/dc3/Sounds/engine_idle.wav</path>
    <condition>
      <property>/engines/engine[0]/running</property>
      <less-than>
@@ -57,7 +57,7 @@
   <engine>
    <name>engine1_running</name>
    <mode>looped</mode>
-   <path>Aircraft/Albatross/Sounds/engine_running.wav</path>
+   <path>Aircraft/dc3/Sounds/engine_running.wav</path>
    <condition>
      <property>/engines/engine[0]/running</property>
      <greater-than>
@@ -116,7 +116,7 @@
   <engine>
    <name>engine2_idle</name>
    <mode>looped</mode>
-   <path>Aircraft/Albatross/Sounds/engine_idle.wav</path>
+   <path>Aircraft/dc3/Sounds/engine_idle.wav</path>
    <condition>
      <property>/engines/engine[1]/running</property>
      <less-than>
@@ -132,7 +132,7 @@
   <engine>
    <name>engine2_running</name>
    <mode>looped</mode>
-   <path>Aircraft/Albatross/Sounds/engine_running.wav</path>
+   <path>Aircraft/dc3/Sounds/engine_running.wav</path>
    <condition>
      <property>/engines/engine[1]/running</property>
      <greater-than>
@@ -174,7 +174,7 @@
   <gear>
    <name>gear</name>
    <mode>in-transit</mode>
-   <path>Aircraft/Albatross/Sounds/gear_move.wav</path>
+   <path>Aircraft/dc3/Sounds/gear_move.wav</path>
    <property>/gear/gear[0]/position-norm</property>
    <pitch>
     <internal>dt_play</internal>
@@ -185,7 +185,7 @@
  
   <gear>
    <name>gear-lock</name>
-   <path>Aircraft/Albatross/Sounds/lock.wav</path>
+   <path>Aircraft/dc3/Sounds/lock.wav</path>
    <condition>
     <equals>
      <property>/gear/gear[0]/position-norm</property>
@@ -227,7 +227,7 @@
   <flap>
    <name>flaps</name>
    <mode>in-transit</mode>
-   <path>Aircraft/Albatross/Sounds/flap_move.wav</path>
+   <path>Aircraft/dc3/Sounds/flap_move.wav</path>
    <property>/surface-positions/flap-pos-norm</property>
    <volume>
     <factor>0.15</factor>
@@ -261,7 +261,7 @@
 
   <stall>
    <name>stall</name>
-   <path>Aircraft/Albatross/Sounds/stall_horn.wav</path>
+   <path>Aircraft/dc3/Sounds/stall_horn.wav</path>
    <property>/sim/alarms/stall-warning</property>
    <volume>
     <property>/velocities/airspeed-kt</property>
