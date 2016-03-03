@@ -145,12 +145,18 @@
    on-solid="1"
    spring="1" 
    damp="2">
+  <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1.0" src1="1.0" dst0="-1.5" dst1="1.5"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+
+  <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
+
+  <control-speed control="EXTEND" transition-time="5"/>
+  <!-- <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-input axis="/controls/gear/tailwheel-lock" control="CASTERING" 
                  src0="0" src1="1"
                  dst0="1" dst1="0"/>
   <control-speed control="EXTEND" transition-time="5"/>
-  <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
+  <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/> -->
 </gear>
 
 <gear x="-7.75" y="2.4" z="-2.5" 

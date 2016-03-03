@@ -4,7 +4,7 @@
 
 <PropertyList>
 
- <path>AS.ac</path>
+ <!-- <path>AS.ac</path> -->
  <animation>
   <type>rotate</type>
   <object-name>needle</object-name>

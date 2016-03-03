@@ -3,65 +3,169 @@
 <PropertyList>
 
 
-<!-- pilots panel -->
+<!-- pilot's panel -->
   <model>
     <name>airspeed</name>
-    <path>Aircraft/Albatross/Models/airspeed.xml</path>
+    <path>Aircraft/Albatross/Models/asi/asi.xml</path>
     <offsets>
-   <x-m>2.6835</x-m>
+   <x-m>2.696</x-m>
    <y-m>-0.4735</y-m>
-   <z-m>0.121</z-m>
+   <z-m>0.126</z-m>
     </offsets>
   </model>	
 
   <model>
     <name>altimeter</name>
-    <path>Aircraft/Albatross/Models/jrb-wbd-alt.xml</path>
+    <path>Aircraft/Albatross/Models/alt/alt.xml</path>
     <offsets>
-   <x-m>2.683</x-m>
+   <x-m>2.696</x-m>
    <y-m>-0.4735</y-m>
-   <z-m>0.039</z-m>
+   <z-m>0.038</z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>ki206 vor/loc/gs</name>
+    <path>Aircraft/Albatross/Models/ki206/ki206.xml</path>
+    <offsets>
+      <x-m>2.699</x-m>
+      <y-m>-0.555</y-m>
+      <z-m>0.115</z-m>
+    </offsets>
+  </model>
+
+   <model>
+    <name>chronometer</name>
+    <path>Aircraft/Albatross/Models/clock.xml</path>
+    <offsets>
+      <x-m>2.699</x-m>
+      <y-m>-0.565</y-m>
+      <z-m>0.039</z-m>
     </offsets>
   </model>
 
   <model>
-    <name>compass</name>
-    <path>Aircraft/Albatross/Models/p51d-jw-remote.xml</path>
+    <name>ai</name>
+    <path>Aircraft/Albatross/Models/ai/ai.xml</path>
     <offsets>
-   <x-m>2.685</x-m>
-   <y-m>-0.3875</y-m>
-   <z-m>0.12</z-m>
+   <x-m>2.699</x-m>
+   <y-m>-0.388</y-m>
+   <z-m>0.126</z-m>
     </offsets>
-  </model>	
+  </model>
 
   <model>
-    <name>horizon</name>
-    <path>Aircraft/Albatross/Models/jrb-wbd-horizon.xml</path>
+    <name>hi</name>
+    <path>Aircraft/Albatross/Models/hi/hi.xml</path>
+    <offsets>
+   <x-m>2.699</x-m>
+   <y-m>-0.388</y-m>
+   <z-m>0.039</z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>vsi</name>
+    <path>Aircraft/Albatross/Models/vsi/vsi.xml</path>
     <offsets>
    <x-m>2.696</x-m>
-   <y-m>-0.303</y-m>
+   <y-m>-0.3038</y-m>
    <z-m>0.122</z-m>
     </offsets>
   </model>
   <model>
-    <name>turn</name>
-    <path>Aircraft/Albatross/Models/jrb-wbd-turn.xml</path>
+    <name>rmi</name>
+    <path>Aircraft/Albatross/Models/rmi-citation/rmi.xml</path>
     <offsets>
-   <x-m>2.684</x-m>
-   <y-m>-0.3054</y-m>
-   <z-m>0.038</z-m>
+   <x-m>2.696</x-m>
+   <y-m>-0.3038</y-m>
+   <z-m>0.039</z-m>
     </offsets>
   </model>
 
+   <!-- <model>
+     <path>Aircraft/Instruments-3d/clock/M877/m877.xml</path>
+     <offsets>
+      <x-m>2.698</x-m>
+      <y-m>-0.565</y-m>
+      <z-m>0.012</z-m>
+      </offsets>
+   </model>
+     <action>
+	<name>adjust left fine</name>
+	<button>0</button>
+	<x>-203</x>
+	<y>258</y>
+	<w>20</w>
+	<h>32</h>
+	<binding>
+	<command>property-adjust</command>
+	<property>/instrumentation/clock/offset-sec</property>
+	<step>-60</step>
+	<min>0</min>
+	<max>43200</max>
+	<wrap>true</wrap>
+	</binding>
+     </action>
+     <action>
+	<name>adjust left coarse</name>
+	<button>1</button>
+	<x>-203</x>
+	<y>258</y>
+	<w>20</w>
+	<h>32</h>
+	<binding>
+	<command>property-adjust</command>
+	<property>/instrumentation/clock/offset-sec</property>
+	<step>-900</step>
+	<min>0</min>
+	<max>43200</max>
+	<wrap>1</wrap>
+	</binding>
+     </action>
+     <action>
+	<name>adjust right fine</name>
+	<button>0</button>
+	<x>-183</x>
+	<y>258</y>
+	<w>20</w>
+	<h>32</h>
+	<binding>
+	<command>property-adjust</command>
+	<property>/instrumentation/clock/offset-sec</property>
+	<step>60</step>
+	<min>0</min>
+	<max>43200</max>
+	<wrap>true</wrap>
+	</binding>
+     </action>
+     <action>
+	<name>adjust right coarse</name>
+	<button>1</button>
+	<x>-183</x>
+	<y>258</y>
+	<w>20</w>
+	<h>32</h>
+	<binding>
+	<command>property-adjust</command>
+	<property>/instrumentation/clock/offset-sec</property>
+	<step>900</step>
+	<min>0</min>
+	<max>43200</max>
+	<wrap>1</wrap>
+	</binding>
+     </action> -->
+
+<!-- Radio Pedastal -->
+
+  
 
 <!-- mid panel -->
   <model>
-    <name>clock</name>
-    <path>Aircraft/Albatross/Models/jrb-wbd-clock.xml</path>
+    <name>Standby-AI</name>
+    <path>Aircraft/Albatross/Models/Standby/standby.xml</path>
     <offsets>
-   <x-m>2.685</x-m>
-   <y-m>-0.192</y-m>
-   <z-m>0.19</z-m>
+      <x-m>2.701</x-m>
+      <y-m>-0.192</y-m>
+      <z-m>0.197</z-m>
     </offsets>
   </model>
   <model>
@@ -77,30 +181,142 @@
     <name>rpm</name>
     <path>Aircraft/Albatross/Models/jrb-wbd-rpm-left.xml</path>
     <offsets>
-   <x-m>2.685</x-m>
+   <x-m>2.689</x-m>
    <y-m>0.041</y-m>
    <z-m>0.19</z-m>
     </offsets>
   </model>
   <model>
-    <name>vsi-l</name>
-    <path>Aircraft/Albatross/Models/jrb-wbd-vsi.xml</path>
+    <name>rmi</name>
+    <path>Aircraft/Albatross/Models/vor-citation/vor-ind.xml</path>
     <offsets>
-   <x-m>2.685</x-m>
+   <x-m>2.699</x-m>
    <y-m>-0.192</y-m>
-   <z-m>0.111</z-m>
+   <z-m>0.113</z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>DME-40</name>
+    <path>Aircraft/Albatross/Models/dme40/dme40.xml</path>
+    <offsets>
+   <x-m>2.698</x-m>
+   <y-m>-0.0</y-m>
+   <z-m>0.110</z-m>
+    </offsets>
+  </model>
+  <model>
+     <name>turn</name>
+     <path>Aircraft/Albatross/Models/turn/turn.xml</path>
+     <offsets>
+      <x-m>2.699</x-m>
+      <y-m>-0.192</y-m>
+      <z-m>0.03</z-m>
+    </offsets>
+   </model>
+  <model>
+    <name>fuel gauge</name>
+    <path>Aircraft/Albatross/Models/FuelGauge/FuelGauge.xml</path>
+    <offsets>
+   <x-m>2.689</x-m>
+   <y-m>-0.107</y-m>
+   <z-m>0.03</z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>Fuel Flow Engine 1</name>
+    <path>Aircraft/Albatross/Models/fuel/fuelflow0.xml</path>
+    <offsets>
+   <x-m>2.699</x-m>
+   <y-m>-0.036</y-m>
+   <z-m>0.035</z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>Fuel Flow Engine 2</name>
+    <path>Aircraft/Albatross/Models/fuel/fuelflow1.xml</path>
+    <offsets>
+   <x-m>2.699</x-m>
+   <y-m>0.032</y-m>
+   <z-m>0.035</z-m>
+    </offsets>
+  </model>
+    
+   <model>
+    <name>psi engine 1</name>
+    <path>Aircraft/Albatross/Models/psi/psi.xml</path>
+    <offsets>
+   <x-m>2.699</x-m>
+   <y-m>0.115</y-m>
+   <z-m>0.19</z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>psi engine 2</name>
+    <path>Aircraft/Albatross/Models/psi/psi1.xml</path>
+    <offsets>
+   <x-m>2.699</x-m>
+   <y-m>0.182</y-m>
+   <z-m>0.19</z-m>
+    </offsets>
+  </model>
+   <model>
+    <name>flaps</name>
+    <path>Aircraft/Albatross/Models/oiltemp/oiltemp.xml</path>
+    <offsets>
+   <x-m>2.699</x-m>
+   <y-m>0.107</y-m>
+   <z-m>0.030</z-m>
+    </offsets>
+  </model>
+   <model>
+    <name>psi engine 1</name>
+    <path>Aircraft/Albatross/Models/psi/psi.xml</path>
+    <offsets>
+   <x-m>2.699</x-m>
+   <y-m>0.115</y-m>
+   <z-m>0.19</z-m>
+    </offsets>
+  </model>
+   <model>
+    <name>Flaps</name>
+    <path>Aircraft/Albatross/Models/Flaps/FLP-47-III.xml</path>
+    <offsets>
+   <x-m>2.699</x-m>
+   <y-m>-0.107</y-m>
+   <z-m>0.117</z-m>
+    </offsets>
+  </model>
+  <model>
+    <name>Carb</name>
+    <path>Aircraft/Albatross/Models/carb/carb.xml</path>
+    <offsets>
+   <x-m>2.699</x-m>
+   <y-m>0.107</y-m>
+   <z-m>0.113</z-m>
     </offsets>
   </model>
 
   <model>
-    <name>vsi-l</name>
-    <path>Aircraft/Albatross/Models/altimeter.xml</path>
+    <name>outside air temp (OAT)</name>
+    <path>Aircraft/Albatross/Models/oat/oat.xml</path>
     <offsets>
-   <x-m>2.689</x-m>
-   <y-m>-0.192</y-m>
-   <z-m>0.03</z-m>
+     <x-m>2.698</x-m>
+     <y-m>-0.107</y-m>
+     <z-m>0.19</z-m>
     </offsets>
   </model>
+ 
+   <model>
+    <name>Cylinder head temperature</name>
+    <path>Aircraft/Albatross/Models/temp/temp.xml</path>
+    <offsets>
+     <x-m>2.699</x-m>
+     <y-m>0.182</y-m>
+     <z-m>0.113</z-m>
+    </offsets>
+  </model>
+
+
     <model> 
       <path>Aircraft/Albatross/Models/dc3-pilot-seat.xml</path>
 	  <name>pilot-seat</name>
@@ -110,6 +326,7 @@
         <z-m>-0.25</z-m>
       </offsets>
     </model>
+
     <model> 
       <path>Aircraft/Albatross/Models/dc3-pilot-seat.xml</path>
 	  <name>copilot-seat</name>

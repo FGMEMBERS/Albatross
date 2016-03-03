@@ -12,7 +12,7 @@ April 2006     faber@sol2500.net
  <sim>
 
   <description>Grumman Albatross</description>
-  <author>Detlef Faber</author>
+  <author>Detlef Faber: Developer; David Waggoner (Skyboat): Instrument Panel</author>
   <status>beta</status>
   <flight-model>yasim</flight-model>
   <aero>Albatross-yasim</aero>

@@ -4,7 +4,7 @@
 
 <PropertyList>
 
- <path>ti.ac</path>
+ <!-- <path>ti.ac</path> -->
 
  <animation>
   <type>rotate</type>
