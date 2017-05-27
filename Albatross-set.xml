@@ -18,6 +18,21 @@ April 2006     faber@sol2500.net
   <aero>Albatross-yasim</aero>
   <fuel-fraction>1.0</fuel-fraction>
 
+  <tags>
+    <tag>grumman</tag>
+    <tag>high-wing</tag>
+    <tag>tricycle</tag>
+    <tag>retractable-gear</tag>
+    <tag>castering</tag>
+    <tag>twin-engine</tag>
+    <tag>piston</tag>
+    <tag>radial</tag>
+    <tag>amphibious</tag>
+    <tag>seaplane</tag>
+    <tag>1950s</tag>
+    <tag>1960s</tag>
+  </tags>
+
   <sound>
    <path>Aircraft/Albatross/Albatross-sound.xml</path>
   </sound>
